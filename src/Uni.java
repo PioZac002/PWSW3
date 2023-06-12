@@ -5,7 +5,6 @@ import java.util.List;
 class Uni {
     private List<Double> ListaDopuszczalnychOcen = Arrays.asList(2.0, 3.0, 3.5, 4.0, 4.5, 5.0);
     private List<Student> ListaStudentow = new ArrayList<>();
-
     public void dodajStudenta(Student student, List<Double> grades) {
         for (double grade : grades) {
             if (!ListaDopuszczalnychOcen.contains(grade)) {
@@ -15,11 +14,9 @@ class Uni {
         }
         ListaStudentow.add(student);
     }
-
     public void usunStudenta(String nr_indeksu) {
         ListaStudentow.removeIf(student -> student.getNr_indeksu().equals(nr_indeksu));
     }
-
     public double obliczSrednia(String nr_indeksu) {
         for (Student student : ListaStudentow) {
             if (student.getNr_indeksu().equals(nr_indeksu)) {
@@ -32,7 +29,6 @@ class Uni {
         }
         throw new IllegalArgumentException("Nie ma studenta z numerem indeksu: " + nr_indeksu);
     }
-
     public double obliczSredniaAll() {
         double sum = 0.0;
         int count = 0;

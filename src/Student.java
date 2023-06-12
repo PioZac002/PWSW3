@@ -14,43 +14,33 @@ public class Student {
         this.nazwisko = nazwisko;
         this.rok_st = rok_st;
     }
-
     public String getNr_indeksu() {
         return nr_indeksu;
     }
-
     public String getImie() {
         return imie;
     }
-
     public String getNazwisko() {
         return nazwisko;
     }
-
     public int getRok_st() {
         return rok_st;
     }
-
     public List<Double> getOceny() {
         return oceny;
     }
-
     public void setImie(String imie) {
         this.imie = imie;
     }
-
     public void setNazwisko(String nazwisko) {
         this.nazwisko = nazwisko;
     }
-
     public void setRok_st(int rok_st) {
         this.rok_st = rok_st;
     }
-
     public void addGrade(double grade) {
         oceny.add(grade);
     }
-
     public void printStudentInfo() {
         System.out.println("Nr indeksu: " + nr_indeksu);
         System.out.println("Imię: " + imie);
