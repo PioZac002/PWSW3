@@ -9,25 +9,20 @@ public class RGB {
         this.G_value = G_value;
         this.B_value = B_value;
     }
-
     // Getery
     public int getR_value() {
         return R_value;
     }
-
     public int getG_value() {
         return G_value;
     }
-
     public int getB_value() {
         return B_value;
     }
-
     // Setery
     public void setR_value(int R_value) {
         this.R_value = R_value;
     }
-
     public void setG_value(int G_value) {
         this.G_value = G_value;
     }

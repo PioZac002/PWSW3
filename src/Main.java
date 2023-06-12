@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("Tak prezetuja sie nasze dwa kolory:");
-        RGB rgb1 = new RGB(255, 0, 0); // Red
-        RGB rgb2 = new RGB(0, 255, 0); // Green
+        RGB rgb1 = new RGB(255, 0, 0);
+        RGB rgb2 = new RGB(0, 255, 0);
 
         RGBController controller = new RGBController();
         controller.displayColor(rgb1);
